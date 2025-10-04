@@ -1,0 +1,11 @@
+{
+  "measurement_type": "reference_waveguide",
+  "waveguide_id": "straight_0.22um",
+  "wavelength_range": [
+    1500.0,
+    1600.0
+  ],
+  "num_points": 201,
+  "timestamp": "2025-10-04T21:45:04.854798",
+  "instrument_simulated": true
+}

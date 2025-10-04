@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-04T21:39:56.964311",
+  "data_directory": "data/fab_test",
+  "analyses_performed": [],
+  "results": {},
+  "summary_statistics": {
+    "propagation_loss": {
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "q_factors": {
+      "mean": null,
+      "std": null
+    },
+    "insertion_loss": {
+      "mean": null,
+      "std": null
+    }
+  }
+}

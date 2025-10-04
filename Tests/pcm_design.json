@@ -1,0 +1,545 @@
+{
+  "metadata": {
+    "chip_size": 5000,
+    "feature_size": 0.22,
+    "timestamp": "2025-10-04T16:45:14",
+    "version": "1.0"
+  },
+  "layer_mapping": {
+    "waveguide": [
+      1,
+      0
+    ],
+    "doping_pcm": [
+      10,
+      0
+    ],
+    "ring_pcm": [
+      11,
+      0
+    ],
+    "grating": [
+      20,
+      0
+    ],
+    "alignment": [
+      100,
+      0
+    ],
+    "width_pcm": [
+      12,
+      0
+    ],
+    "etch_pcm": [
+      13,
+      0
+    ],
+    "roughness_pcm": [
+      14,
+      0
+    ]
+  },
+  "fab_instructions": {
+    "te_doping_gradient": {
+      "description": "Multi-concentration Tellurium doping stripes",
+      "implantation_energy": "50-100 keV",
+      "dose_calibration": "SIMS verification required for each stripe",
+      "annealing": "1000\u00b0C, 30s RTA",
+      "metrology": [
+        "SIMS",
+        "Ellipsometry",
+        "Four-point probe"
+      ]
+    },
+    "geometry_pcms": {
+      "description": "Process variation monitors",
+      "width_tolerance": "\u00b110 nm",
+      "etch_depth_tolerance": "\u00b15%",
+      "metrology": [
+        "SEM cross-section",
+        "AFM",
+        "Optical profiler"
+      ]
+    },
+    "roughness_pcms": {
+      "description": "Sidewall roughness characterization",
+      "target_roughness": "< 3 nm RMS",
+      "metrology": [
+        "AFM",
+        "TEM",
+        "Light scattering"
+      ]
+    }
+  },
+  "structures": [
+    {
+      "type": "doping_stripe",
+      "x": 3500,
+      "y": 2000,
+      "width": 500,
+      "height": 300,
+      "doping_concentration": 1e+18,
+      "label": "Te_1E18",
+      "layer": "doping_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 3550,
+      "y": 2100,
+      "width": 0.22,
+      "length": 200,
+      "doping_concentration": 1e+18,
+      "label": "WG_1E18_straight",
+      "layer": "waveguide"
+    },
+    {
+      "type": "ring_resonator",
+      "x": 3800,
+      "y": 2150,
+      "radius": 5,
+      "width": 0.22,
+      "gap": 0.2,
+      "doping_concentration": 1e+18,
+      "label": "Ring_1E18_R5",
+      "layer": "ring_pcm"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3520,
+      "y": 2100,
+      "width": 20,
+      "length": 50,
+      "label": "GC_1E18_in",
+      "layer": "grating"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3750,
+      "y": 2100,
+      "width": 20,
+      "length": 50,
+      "label": "GC_1E18_out",
+      "layer": "grating"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2010,
+      "size": 10,
+      "label": "Align_Te_1E18_0",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2010,
+      "size": 10,
+      "label": "Align_Te_1E18_1",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2280,
+      "size": 10,
+      "label": "Align_Te_1E18_2",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2280,
+      "size": 10,
+      "label": "Align_Te_1E18_3",
+      "layer": "alignment"
+    },
+    {
+      "type": "doping_stripe",
+      "x": 3500,
+      "y": 2300,
+      "width": 500,
+      "height": 300,
+      "doping_concentration": 5e+18,
+      "label": "Te_5E18",
+      "layer": "doping_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 3550,
+      "y": 2400,
+      "width": 0.22,
+      "length": 200,
+      "doping_concentration": 5e+18,
+      "label": "WG_5E18_straight",
+      "layer": "waveguide"
+    },
+    {
+      "type": "ring_resonator",
+      "x": 3800,
+      "y": 2450,
+      "radius": 5,
+      "width": 0.22,
+      "gap": 0.2,
+      "doping_concentration": 5e+18,
+      "label": "Ring_5E18_R5",
+      "layer": "ring_pcm"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3520,
+      "y": 2400,
+      "width": 20,
+      "length": 50,
+      "label": "GC_5E18_in",
+      "layer": "grating"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3750,
+      "y": 2400,
+      "width": 20,
+      "length": 50,
+      "label": "GC_5E18_out",
+      "layer": "grating"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2310,
+      "size": 10,
+      "label": "Align_Te_5E18_0",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2310,
+      "size": 10,
+      "label": "Align_Te_5E18_1",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2580,
+      "size": 10,
+      "label": "Align_Te_5E18_2",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2580,
+      "size": 10,
+      "label": "Align_Te_5E18_3",
+      "layer": "alignment"
+    },
+    {
+      "type": "doping_stripe",
+      "x": 3500,
+      "y": 2600,
+      "width": 500,
+      "height": 300,
+      "doping_concentration": 1e+19,
+      "label": "Te_10E19",
+      "layer": "doping_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 3550,
+      "y": 2700,
+      "width": 0.22,
+      "length": 200,
+      "doping_concentration": 1e+19,
+      "label": "WG_10E19_straight",
+      "layer": "waveguide"
+    },
+    {
+      "type": "ring_resonator",
+      "x": 3800,
+      "y": 2750,
+      "radius": 5,
+      "width": 0.22,
+      "gap": 0.2,
+      "doping_concentration": 1e+19,
+      "label": "Ring_10E19_R5",
+      "layer": "ring_pcm"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3520,
+      "y": 2700,
+      "width": 20,
+      "length": 50,
+      "label": "GC_10E19_in",
+      "layer": "grating"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3750,
+      "y": 2700,
+      "width": 20,
+      "length": 50,
+      "label": "GC_10E19_out",
+      "layer": "grating"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2610,
+      "size": 10,
+      "label": "Align_Te_10E19_0",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2610,
+      "size": 10,
+      "label": "Align_Te_10E19_1",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2880,
+      "size": 10,
+      "label": "Align_Te_10E19_2",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2880,
+      "size": 10,
+      "label": "Align_Te_10E19_3",
+      "layer": "alignment"
+    },
+    {
+      "type": "doping_stripe",
+      "x": 3500,
+      "y": 2900,
+      "width": 500,
+      "height": 300,
+      "doping_concentration": 5e+19,
+      "label": "Te_50E19",
+      "layer": "doping_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 3550,
+      "y": 3000,
+      "width": 0.22,
+      "length": 200,
+      "doping_concentration": 5e+19,
+      "label": "WG_50E19_straight",
+      "layer": "waveguide"
+    },
+    {
+      "type": "ring_resonator",
+      "x": 3800,
+      "y": 3050,
+      "radius": 5,
+      "width": 0.22,
+      "gap": 0.2,
+      "doping_concentration": 5e+19,
+      "label": "Ring_50E19_R5",
+      "layer": "ring_pcm"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3520,
+      "y": 3000,
+      "width": 20,
+      "length": 50,
+      "label": "GC_50E19_in",
+      "layer": "grating"
+    },
+    {
+      "type": "grating_coupler",
+      "x": 3750,
+      "y": 3000,
+      "width": 20,
+      "length": 50,
+      "label": "GC_50E19_out",
+      "layer": "grating"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 2910,
+      "size": 10,
+      "label": "Align_Te_50E19_0",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 2910,
+      "size": 10,
+      "label": "Align_Te_50E19_1",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3510,
+      "y": 3180,
+      "size": 10,
+      "label": "Align_Te_50E19_2",
+      "layer": "alignment"
+    },
+    {
+      "type": "alignment_cross",
+      "x": 3980,
+      "y": 3180,
+      "size": 10,
+      "label": "Align_Te_50E19_3",
+      "layer": "alignment"
+    },
+    {
+      "type": "waveguide",
+      "x": 2000,
+      "y": 500,
+      "width": 0.18,
+      "length": 200,
+      "label": "PCM_width_0.18um",
+      "layer": "width_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 2060,
+      "y": 500,
+      "width": 0.2,
+      "length": 200,
+      "label": "PCM_width_0.2um",
+      "layer": "width_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 2120,
+      "y": 500,
+      "width": 0.22,
+      "length": 200,
+      "label": "PCM_width_0.22um",
+      "layer": "width_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 2180,
+      "y": 500,
+      "width": 0.24,
+      "length": 200,
+      "label": "PCM_width_0.24um",
+      "layer": "width_pcm"
+    },
+    {
+      "type": "waveguide",
+      "x": 2240,
+      "y": 500,
+      "width": 0.26,
+      "length": 200,
+      "label": "PCM_width_0.26um",
+      "layer": "width_pcm"
+    },
+    {
+      "type": "etch_test",
+      "x": 2000,
+      "y": 600,
+      "width": 10,
+      "length": 50,
+      "etch_depth": 0.65,
+      "label": "PCM_etch_0.65",
+      "layer": "etch_pcm"
+    },
+    {
+      "type": "etch_test",
+      "x": 2060,
+      "y": 600,
+      "width": 10,
+      "length": 50,
+      "etch_depth": 0.7,
+      "label": "PCM_etch_0.7",
+      "layer": "etch_pcm"
+    },
+    {
+      "type": "etch_test",
+      "x": 2120,
+      "y": 600,
+      "width": 10,
+      "length": 50,
+      "etch_depth": 0.75,
+      "label": "PCM_etch_0.75",
+      "layer": "etch_pcm"
+    },
+    {
+      "type": "etch_test",
+      "x": 2180,
+      "y": 600,
+      "width": 10,
+      "length": 50,
+      "etch_depth": 0.8,
+      "label": "PCM_etch_0.8",
+      "layer": "etch_pcm"
+    },
+    {
+      "type": "etch_test",
+      "x": 2240,
+      "y": 600,
+      "width": 10,
+      "length": 50,
+      "etch_depth": 0.85,
+      "label": "PCM_etch_0.85",
+      "layer": "etch_pcm"
+    },
+    {
+      "type": "roughness_test",
+      "x": 2000,
+      "y": 700,
+      "width": 5,
+      "length": 100,
+      "grating_period": 0.2,
+      "label": "PCM_roughness_0.2um",
+      "layer": "roughness_pcm"
+    },
+    {
+      "type": "roughness_test",
+      "x": 2080,
+      "y": 700,
+      "width": 5,
+      "length": 100,
+      "grating_period": 0.3,
+      "label": "PCM_roughness_0.3um",
+      "layer": "roughness_pcm"
+    },
+    {
+      "type": "roughness_test",
+      "x": 2160,
+      "y": 700,
+      "width": 5,
+      "length": 100,
+      "grating_period": 0.4,
+      "label": "PCM_roughness_0.4um",
+      "layer": "roughness_pcm"
+    },
+    {
+      "type": "roughness_test",
+      "x": 2240,
+      "y": 700,
+      "width": 5,
+      "length": 100,
+      "grating_period": 0.5,
+      "label": "PCM_roughness_0.5um",
+      "layer": "roughness_pcm"
+    },
+    {
+      "type": "roughness_test",
+      "x": 2320,
+      "y": 700,
+      "width": 5,
+      "length": 100,
+      "grating_period": 0.6,
+      "label": "PCM_roughness_0.6um",
+      "layer": "roughness_pcm"
+    }
+  ]
+}

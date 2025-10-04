@@ -1,0 +1,13 @@
+{
+  "experiment": "TE_doping_study",
+  "wafer": "W001",
+  "operator": "operator_name",
+  "timestamp": "20250927_062244",
+  "measurement_type": "cutback_loss",
+  "laser_wavelength_nm": 1550,
+  "polarization": "TE",
+  "units": {
+    "length": "\u00b5m",
+    "power": "dBm"
+  }
+}
