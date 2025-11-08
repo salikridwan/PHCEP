@@ -1,0 +1,6 @@
+metric,value
+clock_speedup,10.0
+power_reduction_factor,20.0
+throughput_improvement,25.0
+energy_efficiency_gain,499.99999999999994
+latency_advantage,62.50000000000001

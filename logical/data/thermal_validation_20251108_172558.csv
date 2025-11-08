@@ -1,0 +1,6 @@
+component,validation_status,max_temperature,exceed_80C_count,exceed_90C_count
+CPU,PASS,73.55910846906353,0,0
+GPU,PASS,77.52699287956759,0,0
+Memory,PASS,56.501095136547235,0,0
+Storage,PASS,49.87919392700793,0,0
+Optical_Interface,PASS,63.29398661670434,0,0

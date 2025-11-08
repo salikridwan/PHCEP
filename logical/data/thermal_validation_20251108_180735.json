@@ -1,0 +1,29 @@
+{
+  "safety_limits": {
+    "critical_limit": 90.0,
+    "high_warning": 80.0
+  },
+  "component_validation": {
+    "CPU": {
+      "status": "PASS",
+      "max_temperature": 57.292559143653115,
+      "exceed_80C_count": 0,
+      "exceed_90C_count": 0
+    },
+    "GPU": {
+      "status": "PASS",
+      "max_temperature": 48.08770678946795,
+      "exceed_80C_count": 0,
+      "exceed_90C_count": 0
+    },
+    "PSU": {
+      "status": "PASS",
+      "max_temperature": 41.18729092053684,
+      "exceed_80C_count": 0,
+      "exceed_90C_count": 0
+    }
+  },
+  "overall_status": "PASS",
+  "critical_failures": [],
+  "warnings": []
+}
